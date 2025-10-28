@@ -1,0 +1,1731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>EG Service Catalogue</title>
+<style>
+  :root {
+    --bg: #0b1020;
+    --panel: #121a33;
+    --text: #f2f4ff;
+    --muted: #9aa3c7;
+    --accent: #7aa2ff;
+    --accent-2: #9cc8ff;
+    --border: #22305d;
+    --badge-bg: #1c2a52;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: ui-sans-serif, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+    background: radial-gradient(1200px 700px at 15% 0%, #121a33 0%, #0b1020 60%);
+    color: var(--text);
+  }
+  header {
+    padding: 24px 20px 8px;
+  }
+  h1 {
+    margin: 0 0 10px;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: .2px;
+  }
+  .hint {
+    color: var(--muted);
+    font-size: 12px;
+    margin-top: 6px;
+  }
+  .container {
+    padding: 12px 20px 32px;
+  }
+  .panel {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.25);
+  }
+  .searchbar {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .searchbar input[type="text"] {
+    flex: 1;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: #0f1730;
+    color: var(--text);
+    outline: none;
+  }
+  .searchbar button {
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: #0f1730;
+    color: var(--text);
+    cursor: pointer;
+  }
+  .toolbar {
+    display:flex;
+    gap: 8px;
+    margin: 10px 0 8px;
+    flex-wrap:wrap;
+  }
+  .toolbar button {
+    font-size: 12px;
+    padding: 6px 10px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: #0f1730;
+    color: var(--text);
+    cursor: pointer;
+  }
+  ul.tree {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    line-height: 1.2;
+  }
+  .tree ul {
+    list-style: none;
+    padding-left: 20px;
+    margin: 6px 0;
+    border-left: 1px dashed #2c3b70;
+  }
+  .node .label {
+    display:flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 8px;
+    border-radius: 8px;
+    cursor: default;
+    user-select: none;
+    outline: none;
+  }
+  .node .label:hover {
+    background: rgba(122,162,255,.08);
+  }
+  .node .label:focus {
+    box-shadow: 0 0 0 2px rgba(122,162,255,.35);
+  }
+  .label .chevron {
+    width: 1em;
+    display:inline-block;
+    transition: transform .15s ease;
+    color: var(--accent);
+  }
+  .label[aria-expanded="true"] .chevron {
+    transform: rotate(90deg);
+  }
+  .label .leaf-dot {
+    opacity: .6;
+  }
+  .badge {
+    margin-left: auto;
+    font-size: 11px;
+    background: var(--badge-bg);
+    color: var(--accent-2);
+    padding: 2px 8px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+  }
+  mark {
+    background: rgba(122,162,255,.35);
+    color: var(--text);
+    padding: 0 2px;
+    border-radius: 3px;
+  }
+  .muted {
+    color: var(--muted);
+  }
+  .hidden { display: none !important; }
+</style>
+</head>
+<body>
+  <header>
+    <h1>EG Service Catalogue</h1>
+    <div class="hint">• Click items to expand/collapse • Press ⌘/Ctrl+F focuses search • Enter clears and focuses</div>
+  </header>
+  <div class="container">
+    <div class="panel">
+      <div class="searchbar">
+        <input id="search" type="text" placeholder="Search nodes… (case-insensitive)" aria-label="Search nodes" />
+        <button id="clearBtn" title="Clear search">Clear</button>
+      </div>
+      <div class="toolbar">
+        <button id="expandAll">Expand all</button>
+        <button id="collapseAll">Collapse all</button>
+      </div>
+      <ul class="tree">
+        
+<li class="node">
+  <div class="label has-children" data-nodeid="n1" tabindex="0" aria-expanded="false">
+    <span class="chevron">▶</span>
+    <span class="text">Governance</span>
+    <span class="badge" title="Descendant rows">31</span>
+  </div>
+  <ul class="children" id="n1" hidden>
+    
+<li class="node">
+  <div class="label has-children" data-nodeid="n2" tabindex="0" aria-expanded="false">
+    <span class="chevron">▶</span>
+    <span class="text">Toolchain Governance</span>
+    <span class="badge" title="Descendant rows">31</span>
+  </div>
+  <ul class="children" id="n2" hidden>
+    
+<li class="node">
+  <div class="label has-children" data-nodeid="n3" tabindex="0" aria-expanded="false">
+    <span class="chevron">▶</span>
+    <span class="text">Business Continuity &amp; Recovery</span>
+    <span class="badge" title="Descendant rows">3</span>
+  </div>
+  <ul class="children" id="n3" hidden>
+    
+<li class="node leaf">
+  <div class="label" data-nodeid="n4" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">L3 support/escalation process aligned with solution delivery, change management, toolchain governance</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n5" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Platform &amp; Application Support &amp; Continuity Plan</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n6" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Site &amp; Granular Backup/Restore Strategy, Tooling, SLA &amp; RTP/RPO</span>
+  </div>
+</li>
+  </ul>
+</li>
+
+<li class="node">
+  <div class="label has-children" data-nodeid="n7" tabindex="0" aria-expanded="false">
+    <span class="chevron">▶</span>
+    <span class="text">Compliance</span>
+    <span class="badge" title="Descendant rows">4</span>
+  </div>
+  <ul class="children" id="n7" hidden>
+    
+<li class="node leaf">
+  <div class="label" data-nodeid="n8" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Accreditation and TAG Orchestration</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n9" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Atlassian &amp; Vendor Trust Team Liaison</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n10" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Compliance Gap Solutions</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n11" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Marketplace App Substitution/Transiton</span>
+  </div>
+</li>
+  </ul>
+</li>
+
+<li class="node">
+  <div class="label has-children" data-nodeid="n12" tabindex="0" aria-expanded="false">
+    <span class="chevron">▶</span>
+    <span class="text">Governance Metrics &amp; Reporting</span>
+    <span class="badge" title="Descendant rows">3</span>
+  </div>
+  <ul class="children" id="n12" hidden>
+    
+<li class="node leaf">
+  <div class="label" data-nodeid="n13" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">BI Platform Integration</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n14" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Dashboard &amp; Report Instrumentation &amp; Prototyping</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n15" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Governance Native &amp; Quick Win Dashboards</span>
+  </div>
+</li>
+  </ul>
+</li>
+
+<li class="node">
+  <div class="label has-children" data-nodeid="n16" tabindex="0" aria-expanded="false">
+    <span class="chevron">▶</span>
+    <span class="text">Organisational Change Management</span>
+    <span class="badge" title="Descendant rows">2</span>
+  </div>
+  <ul class="children" id="n16" hidden>
+    
+<li class="node leaf">
+  <div class="label" data-nodeid="n17" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Tailored People &amp; Organisational Change Management Framework</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n18" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Tool Change Management Quickstart</span>
+  </div>
+</li>
+  </ul>
+</li>
+
+<li class="node">
+  <div class="label has-children" data-nodeid="n19" tabindex="0" aria-expanded="false">
+    <span class="chevron">▶</span>
+    <span class="text">Platform Change Management</span>
+    <span class="badge" title="Descendant rows">4</span>
+  </div>
+  <ul class="children" id="n19" hidden>
+    
+<li class="node leaf">
+  <div class="label" data-nodeid="n20" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Atlassian Cloud Change/Environment Management Foundations</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n21" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">CAB RFC Submissions &amp; Orchestration</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n22" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Configuration &amp; Data Sandbox, Test &amp; Production deployment tool implementation.</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n23" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Tailored Platform Change Governance Framework</span>
+  </div>
+</li>
+  </ul>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n24" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Quarterly Toolchain Governance &amp; Roadmapping</span>
+  </div>
+</li>
+
+<li class="node">
+  <div class="label has-children" data-nodeid="n25" tabindex="0" aria-expanded="false">
+    <span class="chevron">▶</span>
+    <span class="text">Security</span>
+    <span class="badge" title="Descendant rows">6</span>
+  </div>
+  <ul class="children" id="n25" hidden>
+    
+<li class="node leaf">
+  <div class="label" data-nodeid="n26" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">API, Token &amp; Secret Management &amp; Rotation Framework</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n27" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Data Security Policy, CMK/BYOK, Data Residency, Classfications Design</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n28" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Internal &amp; External Auth Policy Design</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n29" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Security Due Diligence &amp; TAG+CAB Assents</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n30" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Service Account Auth &amp; Management Conventions</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n31" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Threat, Data Loss &amp; Breach Detection Policy Design</span>
+  </div>
+</li>
+  </ul>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n32" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Solution Compatibility Assessment &amp; Refactoring</span>
+  </div>
+</li>
+
+<li class="node">
+  <div class="label has-children" data-nodeid="n33" tabindex="0" aria-expanded="false">
+    <span class="chevron">▶</span>
+    <span class="text">SSO and User Provisioning</span>
+    <span class="badge" title="Descendant rows">4</span>
+  </div>
+  <ul class="children" id="n33" hidden>
+    
+<li class="node leaf">
+  <div class="label" data-nodeid="n34" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Domain &amp; Account Claiming</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n35" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">IdP connection &amp; Authentication Policy</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n36" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Provisioning Group Design &amp; Attribute Mapping</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n37" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">UPN &amp; Username Alignment</span>
+  </div>
+</li>
+  </ul>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n38" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Tailored Enterprise Tooling Roadmap</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n39" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Tool &amp; Service Owner, Stakeholder Induction &amp; Facilitation</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n40" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Tool Strategy &amp; Advisory Services</span>
+  </div>
+</li>
+  </ul>
+</li>
+  </ul>
+</li>
+
+<li class="node">
+  <div class="label has-children" data-nodeid="n41" tabindex="0" aria-expanded="false">
+    <span class="chevron">▶</span>
+    <span class="text">Licensing</span>
+    <span class="badge" title="Descendant rows">7</span>
+  </div>
+  <ul class="children" id="n41" hidden>
+    
+<li class="node">
+  <div class="label has-children" data-nodeid="n42" tabindex="0" aria-expanded="false">
+    <span class="chevron">▶</span>
+    <span class="text">Custom Licensing</span>
+    <span class="badge" title="Descendant rows">2</span>
+  </div>
+  <ul class="children" id="n42" hidden>
+    
+<li class="node leaf">
+  <div class="label" data-nodeid="n43" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">License Co-terming &amp; Custom Payment Plans</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n44" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Multi-year Customised Licensing</span>
+  </div>
+</li>
+  </ul>
+</li>
+
+<li class="node">
+  <div class="label has-children" data-nodeid="n45" tabindex="0" aria-expanded="false">
+    <span class="chevron">▶</span>
+    <span class="text">SaaS Portfolio License Management</span>
+    <span class="badge" title="Descendant rows">1</span>
+  </div>
+  <ul class="children" id="n45" hidden>
+    
+<li class="node leaf">
+  <div class="label" data-nodeid="n46" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">SaaS Portfolio Licensing Aggregation, Management &amp; Optimisation</span>
+  </div>
+</li>
+  </ul>
+</li>
+
+<li class="node">
+  <div class="label has-children" data-nodeid="n47" tabindex="0" aria-expanded="false">
+    <span class="chevron">▶</span>
+    <span class="text">Smart Licensing</span>
+    <span class="badge" title="Descendant rows">4</span>
+  </div>
+  <ul class="children" id="n47" hidden>
+    
+<li class="node leaf">
+  <div class="label" data-nodeid="n48" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Enterprise Org, Site &amp; App Licensing Optimisation</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n49" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Licensing Report &amp; Options Analysis</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n50" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Marketplace App Vendor Trials &amp; Tailored Pricing</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n51" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Purchases, Renewals &amp; Upgrades</span>
+  </div>
+</li>
+  </ul>
+</li>
+  </ul>
+</li>
+
+<li class="node">
+  <div class="label has-children" data-nodeid="n52" tabindex="0" aria-expanded="false">
+    <span class="chevron">▶</span>
+    <span class="text">Solutions</span>
+    <span class="badge" title="Descendant rows">107</span>
+  </div>
+  <ul class="children" id="n52" hidden>
+    
+<li class="node">
+  <div class="label has-children" data-nodeid="n53" tabindex="0" aria-expanded="false">
+    <span class="chevron">▶</span>
+    <span class="text">Collaborative Tool Culture</span>
+    <span class="badge" title="Descendant rows">3</span>
+  </div>
+  <ul class="children" id="n53" hidden>
+    
+<li class="node leaf">
+  <div class="label" data-nodeid="n54" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Enterprise Collaboration Accelerator</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n55" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Jira Software QuickStart</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n56" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Teamwork Graph &amp; AI Cross-Tool Intelligence</span>
+  </div>
+</li>
+  </ul>
+</li>
+
+<li class="node">
+  <div class="label has-children" data-nodeid="n57" tabindex="0" aria-expanded="false">
+    <span class="chevron">▶</span>
+    <span class="text">Developer eXperience</span>
+    <span class="badge" title="Descendant rows">3</span>
+  </div>
+  <ul class="children" id="n57" hidden>
+    
+<li class="node leaf">
+  <div class="label" data-nodeid="n58" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Accelerator: DX IDP, DevOps and Release Management</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n59" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Component Architecture &amp; Discovery Alignment</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n60" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Tailored IDP Team, Goal, Scorecard &amp; Service Solution</span>
+  </div>
+</li>
+  </ul>
+</li>
+
+<li class="node">
+  <div class="label has-children" data-nodeid="n61" tabindex="0" aria-expanded="false">
+    <span class="chevron">▶</span>
+    <span class="text">Development &amp; Release Management</span>
+    <span class="badge" title="Descendant rows">3</span>
+  </div>
+  <ul class="children" id="n61" hidden>
+    
+<li class="node leaf">
+  <div class="label" data-nodeid="n62" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Development Workflow, Release &amp; CI/CD Pipeline Alignment</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n63" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Platform, App &amp; Integration Security TAG Assents</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n64" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Release management alignment with Service Management &amp; Operations</span>
+  </div>
+</li>
+  </ul>
+</li>
+
+<li class="node">
+  <div class="label has-children" data-nodeid="n65" tabindex="0" aria-expanded="false">
+    <span class="chevron">▶</span>
+    <span class="text">Enterprise Services Excellence</span>
+    <span class="badge" title="Descendant rows">23</span>
+  </div>
+  <ul class="children" id="n65" hidden>
+    
+<li class="node">
+  <div class="label has-children" data-nodeid="n66" tabindex="0" aria-expanded="false">
+    <span class="chevron">▶</span>
+    <span class="text">AI-driven Service Managerment</span>
+    <span class="badge" title="Descendant rows">3</span>
+  </div>
+  <ul class="children" id="n66" hidden>
+    
+<li class="node leaf">
+  <div class="label" data-nodeid="n67" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Rovo + Automation Triage, Classification &amp; Routing</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n68" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Virtual Agent Conversation-driven Automation</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n69" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Virtual Agent Intent, Flow Design</span>
+  </div>
+</li>
+  </ul>
+</li>
+
+<li class="node">
+  <div class="label has-children" data-nodeid="n70" tabindex="0" aria-expanded="false">
+    <span class="chevron">▶</span>
+    <span class="text">CMDB</span>
+    <span class="badge" title="Descendant rows">11</span>
+  </div>
+  <ul class="children" id="n70" hidden>
+    
+<li class="node leaf">
+  <div class="label" data-nodeid="n71" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Asset Disposals, Repository, Stock</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n72" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Assets for Contract and Vendor management</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n73" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Assets for Financial Reporting</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n74" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Assets for Product Catalogue</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n75" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Assets, Data Manager and Assets Discovery</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n76" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Catalogue-driven Lifecycle Management</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n77" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">CMDB Synchronisation Solutions</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n78" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Inventory Management using Jira Assets</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n79" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">IT Service and Asset Management</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n80" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Physical Asset Label &amp; Scan Solutions</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n81" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Service &amp; System Catalogue-driven ITSM Automation</span>
+  </div>
+</li>
+  </ul>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n82" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Email Channel &amp; Routing Solutions</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n83" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Facilities Management &amp; Multi-Site Planned Maintenence Automation</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n84" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Global Business &amp; Customer Services Quickstart</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n85" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Help Center Design &amp; Theming</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n86" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Incident, Change, Request, Problem Solutions</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n87" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Jira Service Management ITSM &amp; Enterprise Service Management Quickstart</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n88" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Notifications and approvals template and content enhancements</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n89" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">People and Equipment Service Managment</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n90" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Seamless MDM, EUC, BYOD</span>
+  </div>
+</li>
+  </ul>
+</li>
+
+<li class="node">
+  <div class="label has-children" data-nodeid="n91" tabindex="0" aria-expanded="false">
+    <span class="chevron">▶</span>
+    <span class="text">Knowledge at Scale</span>
+    <span class="badge" title="Descendant rows">4</span>
+  </div>
+  <ul class="children" id="n91" hidden>
+    
+<li class="node leaf">
+  <div class="label" data-nodeid="n92" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Confluence Knowledge Hub Launch</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n93" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Editorial Process &amp; Content Lifecycle Automation</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n94" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">External Content Integration</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n95" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Label Conventions &amp; Service Knowledgebase Architecture</span>
+  </div>
+</li>
+  </ul>
+</li>
+
+<li class="node">
+  <div class="label has-children" data-nodeid="n96" tabindex="0" aria-expanded="false">
+    <span class="chevron">▶</span>
+    <span class="text">Operational Metrics &amp; Reporting</span>
+    <span class="badge" title="Descendant rows">5</span>
+  </div>
+  <ul class="children" id="n96" hidden>
+    
+<li class="node leaf">
+  <div class="label" data-nodeid="n97" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Agile Reporting &amp; Dashboards Accelerator</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n98" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">BI Platform Integrations</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n99" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Dashboard &amp; Report Instrumentation &amp; Prototyping</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n100" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Metrics Business Glossary &amp; Technical Design</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n101" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Operational Native &amp; Quick Win Dashboards</span>
+  </div>
+</li>
+  </ul>
+</li>
+
+<li class="node">
+  <div class="label has-children" data-nodeid="n102" tabindex="0" aria-expanded="false">
+    <span class="chevron">▶</span>
+    <span class="text">People x AI</span>
+    <span class="badge" title="Descendant rows">7</span>
+  </div>
+  <ul class="children" id="n102" hidden>
+    
+<li class="node leaf">
+  <div class="label" data-nodeid="n103" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">AI Feature Alignment, Usecase &amp; Lifecycle Design</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n104" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">AI Quality &amp; Accuracy Controls</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n105" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">AI Security TAG Asset Facilitation</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n106" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">MCP Integration Solutions</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n107" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Rovo Agent Solutions</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n108" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Teamwork Intelligence Accelerator</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n109" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Triage, Progress &amp; Status Automation</span>
+  </div>
+</li>
+  </ul>
+</li>
+
+<li class="node">
+  <div class="label has-children" data-nodeid="n110" tabindex="0" aria-expanded="false">
+    <span class="chevron">▶</span>
+    <span class="text">People, Capability, Self-Sufficiency</span>
+    <span class="badge" title="Descendant rows">7</span>
+  </div>
+  <ul class="children" id="n110" hidden>
+    
+<li class="node leaf">
+  <div class="label" data-nodeid="n111" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Administrator Training &amp; Material</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n112" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Atlassian Training and Enablement</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n113" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Solution As-built Documentation</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n114" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Solution Training Documentation</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n115" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Solution Training Programme Design &amp; Delivery</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n116" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Transformation Coaching</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n117" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">User Adoption &amp; Training Boost</span>
+  </div>
+</li>
+  </ul>
+</li>
+
+<li class="node">
+  <div class="label has-children" data-nodeid="n118" tabindex="0" aria-expanded="false">
+    <span class="chevron">▶</span>
+    <span class="text">Platform Migration &amp; Consolidation</span>
+    <span class="badge" title="Descendant rows">13</span>
+  </div>
+  <ul class="children" id="n118" hidden>
+    
+<li class="node leaf">
+  <div class="label" data-nodeid="n119" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Atlassian Cloud Site, Organization Merging &amp; Splitting</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n120" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Cloud Migration Starter</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n121" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Confluence Cloud Migration</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n122" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">FreshService to Jira Service Management Migration</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n123" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Historical Data Migration &amp; Mounted Archive Solutions</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n124" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Kayako to Jira Service Management Migration</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n125" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Knowledgebase &amp; External Data Source Migration</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n126" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Migration Assessment</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n127" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Migration Cutover &amp; Hypercare</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n128" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Organisational, People &amp; System Change Facilitation</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n129" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">ServiceNow to Jira Service Management Migration</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n130" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Sharepoint, Web &amp; File Migration to Confluence</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n131" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Zendesk to Jira Service Management Migration</span>
+  </div>
+</li>
+  </ul>
+</li>
+
+<li class="node">
+  <div class="label has-children" data-nodeid="n132" tabindex="0" aria-expanded="false">
+    <span class="chevron">▶</span>
+    <span class="text">Process Automation &amp; Augmentation</span>
+    <span class="badge" title="Descendant rows">15</span>
+  </div>
+  <ul class="children" id="n132" hidden>
+    
+<li class="node leaf">
+  <div class="label" data-nodeid="n133" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Advanced Workflow &amp; Automation Upgrade</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n134" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Automating Client Onboarding with JSM</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n135" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Automating Contract Management</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n136" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Automating Invoicing with JSM, Zapier and Xero</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n137" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Change and Release Management Automation</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n138" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Contract Management Automation with Jira and JSM</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n139" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Custom App and Integration Development</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n140" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Customer Onboarding and Workflow Automation</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n141" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Invoicing Automation with JSM, Zapier, and Xero</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n142" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Optimising Mobile Device Management</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n143" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Platform Integration &amp; iPaaS Processing Solutions</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n144" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">R&amp;D Tax Credit Reporting Automation</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n145" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">RFC and CAB Assents for Tool Platform Changes</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n146" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Smart Notifications</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n147" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Solution Design &amp; Consulting</span>
+  </div>
+</li>
+  </ul>
+</li>
+
+<li class="node">
+  <div class="label has-children" data-nodeid="n148" tabindex="0" aria-expanded="false">
+    <span class="chevron">▶</span>
+    <span class="text">Product Ideas to Delivery</span>
+    <span class="badge" title="Descendant rows">2</span>
+  </div>
+  <ul class="children" id="n148" hidden>
+    
+<li class="node leaf">
+  <div class="label" data-nodeid="n149" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Product Delivery Planning, Tracking &amp; Reporting</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n150" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Tailored Jira Product Discovery Idea Funnel Design</span>
+  </div>
+</li>
+  </ul>
+</li>
+
+<li class="node">
+  <div class="label has-children" data-nodeid="n151" tabindex="0" aria-expanded="false">
+    <span class="chevron">▶</span>
+    <span class="text">Scalability &amp; ROI</span>
+    <span class="badge" title="Descendant rows">7</span>
+  </div>
+  <ul class="children" id="n151" hidden>
+    
+<li class="node leaf">
+  <div class="label" data-nodeid="n152" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Access &amp; Permission Model Design &amp; Implementation</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n153" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Atlassian Health Checks</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n154" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Confidential Request &amp; Dynamic Ticket Access Automation</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n155" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Configuration/Data Hygiene &amp; Sprawl Control</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n156" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">SaaS Configuration Standardisation &amp; Pattern Rationalisation</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n157" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Template-Driven SaaS Configuration Management</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n158" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Tool Segmentation Architecture</span>
+  </div>
+</li>
+  </ul>
+</li>
+
+<li class="node">
+  <div class="label has-children" data-nodeid="n159" tabindex="0" aria-expanded="false">
+    <span class="chevron">▶</span>
+    <span class="text">Scaled Delivery &amp; Way of Working</span>
+    <span class="badge" title="Descendant rows">7</span>
+  </div>
+  <ul class="children" id="n159" hidden>
+    
+<li class="node leaf">
+  <div class="label" data-nodeid="n160" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Annual, Quarterly, Spint, Release Delivery Lifecycle Solutions</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n161" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Capacity Planning &amp; Time/Cost Tracking</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n162" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">OKR &amp; Delivery Status Tracking Automation</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n163" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">OKR &amp; Work Relationship Analysis &amp; Implementation</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n164" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Project Management Office (PMO)</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n165" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Scaled Delivery and Strategy Accellerator</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n166" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Teamwork Intelligence Accelerator</span>
+  </div>
+</li>
+  </ul>
+</li>
+
+<li class="node">
+  <div class="label has-children" data-nodeid="n167" tabindex="0" aria-expanded="false">
+    <span class="chevron">▶</span>
+    <span class="text">Service Monitoring &amp; Incident Management</span>
+    <span class="badge" title="Descendant rows">8</span>
+  </div>
+  <ul class="children" id="n167" hidden>
+    
+<li class="node leaf">
+  <div class="label" data-nodeid="n168" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Alert Monitoring Integration, Routing &amp; Incident Rules</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n169" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Edge Connector &amp; Cloud Actions</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n170" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Global Business &amp; Customer Services</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n171" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Incident Management Uplift</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n172" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">OpsGenie to JSM Merging</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n173" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Service Monitoring &amp; Rostered Response Quickstart</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n174" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">StatusPage &amp; JSM Operations Alignment</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n175" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Team, Roster Design &amp; Alert/Incident, Service Alignment</span>
+  </div>
+</li>
+  </ul>
+</li>
+  </ul>
+</li>
+
+<li class="node">
+  <div class="label has-children" data-nodeid="n176" tabindex="0" aria-expanded="false">
+    <span class="chevron">▶</span>
+    <span class="text">Support &amp; Operations</span>
+    <span class="badge" title="Descendant rows">14</span>
+  </div>
+  <ul class="children" id="n176" hidden>
+    
+<li class="node">
+  <div class="label has-children" data-nodeid="n177" tabindex="0" aria-expanded="false">
+    <span class="chevron">▶</span>
+    <span class="text">Managed Support &amp; Continuous Improvement</span>
+    <span class="badge" title="Descendant rows">14</span>
+  </div>
+  <ul class="children" id="n177" hidden>
+    
+<li class="node leaf">
+  <div class="label" data-nodeid="n178" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Access &amp; Onboarding/Offoboarding Operations</span>
+  </div>
+</li>
+
+<li class="node">
+  <div class="label has-children" data-nodeid="n179" tabindex="0" aria-expanded="false">
+    <span class="chevron">▶</span>
+    <span class="text">Alert &amp; Breach Monitoring</span>
+    <span class="badge" title="Descendant rows">3</span>
+  </div>
+  <ul class="children" id="n179" hidden>
+    
+<li class="node leaf">
+  <div class="label" data-nodeid="n180" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Atlassian Guard Security Insights Monitoring &amp; L1 Response</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n181" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Guard Detect, SIEM, SOAR, TIP, NDR, DLP Monitoring &amp; Response</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n182" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Infrastructure &amp; Service Monitoring &amp; Alert/Incident L1/2 Response/Triage</span>
+  </div>
+</li>
+  </ul>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n183" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">API, Token &amp; Secret Management &amp; Rotation</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n184" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Automation Hardening &amp; Caretaker Rulesets</span>
+  </div>
+</li>
+
+<li class="node">
+  <div class="label has-children" data-nodeid="n185" tabindex="0" aria-expanded="false">
+    <span class="chevron">▶</span>
+    <span class="text">Configuration &amp; Utilisation Monitoring</span>
+    <span class="badge" title="Descendant rows">4</span>
+  </div>
+  <ul class="children" id="n185" hidden>
+    
+<li class="node leaf">
+  <div class="label" data-nodeid="n186" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Asset Consumption Monitoring &amp; Management</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n187" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Automation Logs and Rate Limit, Integration Logs, Mail Allow/Block/Loop Monitoring &amp; Maintenance</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n188" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">License Utilisation Monitoring &amp; Seat Management</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n189" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Rovo Execution Monitoring &amp; Management</span>
+  </div>
+</li>
+  </ul>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n190" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">L1 - 4 Toolchain Support</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n191" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Marketplace App Substitution/Transiton</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n192" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">On-Demand Point Solutions &amp; User Support</span>
+  </div>
+</li>
+
+<li class="node leaf">
+  <div class="label" data-nodeid="n193" tabindex="0" aria-expanded="false">
+    <span class="leaf-dot">•</span>
+    <span class="text">Project, Board, Space, Page &amp; General Operations</span>
+  </div>
+</li>
+  </ul>
+</li>
+  </ul>
+</li>
+      </ul>
+    </div>
+  </div>
+<script>
+  const q = (sel, el=document) => el.querySelector(sel);
+  const qa = (sel, el=document) => Array.from(el.querySelectorAll(sel));
+
+  // Toggle expand/collapse
+  document.addEventListener('click', (e) => { 
+    const label = e.target.closest('.label.has-children');
+    if (!label) return;
+    const id = label.getAttribute('data-nodeid');
+    const child = document.getElementById(id);
+    const expanded = label.getAttribute('aria-expanded') === 'true';
+    label.setAttribute('aria-expanded', String(!expanded));
+    if (child) child.hidden = expanded;
+  });
+
+  // Keyboard toggle with Enter/Space
+  document.addEventListener('keydown', (e) => {
+    const label = e.target.closest('.label.has-children');
+    if (!label) return;
+    if (e.key === 'Enter' || e.key === ' ') { 
+      e.preventDefault();
+      label.click();
+    }
+  });
+
+  function setAll(expand=true){
+    qa('.label.has-children').forEach(label => {
+      const id = label.getAttribute('data-nodeid');
+      const child = document.getElementById(id);
+      label.setAttribute('aria-expanded', String(expand));
+      if (child) child.hidden = !expand;
+    });
+  }
+
+  q('#expandAll').addEventListener('click', () => setAll(true));
+  q('#collapseAll').addEventListener('click', () => setAll(false));
+
+  // Search with incremental filter: show matching labels and all their ancestors; hide others.
+  const searchInput = q('#search');
+  const clearBtn = q('#clearBtn');
+
+  function clearHighlights(){
+    qa('.text').forEach(t => {
+      t.innerHTML = t.textContent;
+    });
+  }
+
+  function performSearch(term){
+    const needle = term.trim().toLowerCase();
+    clearHighlights();
+
+    if (!needle){
+      setAll(false);
+      qa('.node').forEach(n => n.classList.remove('hidden'));
+      return;
+    }
+
+    const nodes = qa('.node');
+    nodes.forEach(n => n.classList.add('hidden'));
+
+    qa('.label').forEach(lbl => {
+      const txtEl = lbl.querySelector('.text');
+      const text = txtEl ? txtEl.textContent.toLowerCase() : '';
+      if (text.includes(needle)){
+        if (txtEl){
+          const raw = txtEl.textContent;
+          const idx = raw.toLowerCase().indexOf(needle);
+          if (idx >= 0){
+            const before = raw.slice(0, idx);
+            const mid = raw.slice(idx, idx + needle.length);
+            const after = raw.slice(idx + needle.length);
+            txtEl.innerHTML = before + '<mark>' + mid + '</mark>' + after;
+          }
+        }
+        let nodeEl = lbl.closest('.node');
+        while (nodeEl){
+          nodeEl.classList.remove('hidden');
+          const parentLabel = nodeEl.querySelector(':scope > .label.has-children');
+          if (parentLabel){
+            const id = parentLabel.getAttribute('data-nodeid');
+            const child = document.getElementById(id);
+            parentLabel.setAttribute('aria-expanded', 'true');
+            if (child) child.hidden = false;
+          }
+          nodeEl = nodeEl.parentElement.closest('.node');
+        }
+      }
+    });
+
+    qa('.children').forEach(ul => {
+      const anyVisible = qa(':scope > .node', ul).some(n => !n.classList.contains('hidden'));
+      if (anyVisible) ul.hidden = false;
+    });
+  }
+
+  searchInput.addEventListener('input', (e) => performSearch(e.target.value));
+  clearBtn.addEventListener('click', () => { searchInput.value = ""; performSearch(""); searchInput.focus(); });
+
+  // Keyboard shortcuts: Enter focuses search; Escape clears
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' && !e.target.matches('input,textarea')){
+      e.preventDefault();
+      searchInput.focus();
+      searchInput.select();
+    } else if (e.key === 'Escape'){
+      searchInput.value = "";
+      performSearch("");
+    }
+  });
+</script>
+</body>
+</html>
