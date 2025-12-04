@@ -1,0 +1,3516 @@
+
+<!-- saved from url=(0056)file:///C:/Users/rickj/AppData/Local/Temp/e-MRS3uCV.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                <meta http-equiv="Content-Security-Policy" content="default-src &#39;none&#39;; script-src http: https: &#39;unsafe-inline&#39;; style-src http: https: &#39;unsafe-inline&#39; ; img-src http: https: data:; font-src http: https:; connect-src http: https:; media-src http: https:; object-src &#39;none&#39;; child-src &#39;none&#39;; frame-src &#39;none&#39;">
+                <script type="text/javascript">
+                  
+
+                  // Initialize sandbox
+                  (function () {
+                    function blockMethod (name) {
+                      return () => console.error("Ignored call to '" + name + "()'.")
+                    }
+
+                    window['alert'] = blockMethod('alert'); window['confirm'] = blockMethod('confirm'); window['print'] = blockMethod('print'); window['prompt'] = blockMethod('prompt');
+                    delete window['Worker']; window['Worker'] = undefined; delete window['indexedDB']; window['indexedDB'] = undefined;
+
+                    let _navigator = {};
+                    for (let key in navigator) {
+                      const prop = navigator[key];
+                      if (typeof prop !== 'object' && typeof prop !== 'function') {
+                        _navigator[key] = prop;
+                      }
+                    }
+                    delete window.navigator;
+                    window.navigator = _navigator;
+                  })();
+                </script>
+                
+              </head>
+              <body>
+                
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  .container {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  h1 {
+    color: #333;
+    font-size: 24px;
+    margin-top: 0;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+  }
+  .summary {
+    background-color: #fff9c4;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    border-left: 4px solid #fbc02d;
+  }
+  .summary-title {
+    font-weight: 600;
+    color: #f57f17;
+    margin-bottom: 5px;
+  }
+  .url-section {
+    margin-bottom: 30px;
+  }
+  .url-header {
+    background-color: #f0f0f0;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: 600;
+    color: #1976d2;
+    font-size: 16px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    user-select: none;
+  }
+  .url-header:hover {
+    background-color: #e0e0e0;
+  }
+  .url-header::before {
+    content: '▼ ';
+    display: inline-block;
+    transition: transform 0.3s;
+  }
+  .url-header.collapsed::before {
+    transform: rotate(-90deg);
+  }
+  .url-content {
+    display: block;
+  }
+  .url-content.hidden {
+    display: none;
+  }
+  .product-section {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  .product-header {
+    background-color: #e3f2fd;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: 600;
+    color: #0d47a1;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .user-list {
+    margin-left: 40px;
+    list-style-type: none;
+    padding: 0;
+  }
+  .user-item {
+    padding: 8px;
+    margin-bottom: 5px;
+    background-color: #fff3e0;
+    border-left: 3px solid #ff9800;
+    border-radius: 3px;
+  }
+  .user-name {
+    font-weight: 600;
+    color: #e65100;
+  }
+  .user-email {
+    color: #666;
+    font-size: 13px;
+    margin-left: 10px;
+  }
+  .last-active {
+    color: #999;
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  .no-users {
+    margin-left: 40px;
+    color: #4caf50;
+    font-style: italic;
+    padding: 8px;
+  }
+  .total-count {
+    font-size: 12px;
+    color: #666;
+    margin-left: 5px;
+  }
+</style>
+
+<div class="container">
+  <h1>Inactive Users Report (30+ Days)</h1>
+  
+  <div class="summary">
+    <div class="summary-title">Report Generated: 2025-12-04</div>
+    <div>Threshold Date: 2025-11-04</div>
+    <div>Total URLs: 77</div>
+    <div>Total Inactive Users Found: 310</div>
+  </div>
+
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      5gnetworks.atlassian.net <span class="total-count">(4 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Confluence <span class="total-count">(2 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-06-19</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">licensing@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Service Management <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-09-14</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Software <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-09-14</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      airsculpt.atlassian.net <span class="total-count">(7 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Confluence <span class="total-count">(2 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Nathan Guenther</span>
+            <span class="user-email">nathan@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Service Management <span class="total-count">(2 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-09-05</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Nathan Guenther</span>
+            <span class="user-email">nathan@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2023-03-07</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Software <span class="total-count">(2 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-09-05</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Nathan Guenther</span>
+            <span class="user-email">nathan@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2023-03-07</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Loom <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Nathan Guenther</span>
+            <span class="user-email">nathan@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-07-31</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      as-a-team.atlassian.net <span class="total-count">(6 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Confluence <span class="total-count">(3 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Kirsty Davies</span>
+            <span class="user-email">kirsty@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-04-28</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-08-06</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Software <span class="total-count">(3 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Kirsty Davies</span>
+            <span class="user-email">kirsty@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-01-22</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-08-06</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header collapsed" onclick="toggleSection(this)">
+      ashgro.atlassian.net <span class="total-count">(9 inactive users)</span>
+    </div>
+    <div class="url-content hidden">
+      <div class="product-section">
+        <div class="product-header">
+          Confluence <span class="total-count">(2 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-02-13</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-09-22</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Product Discovery <span class="total-count">(2 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-07-03</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Service Management <span class="total-count">(2 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-07-03</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Software <span class="total-count">(2 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-07-03</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Loom <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      atl-vertigo--shard-jira-prod-test-us-2--brand.atlassian.net <span class="total-count">(12 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Confluence <span class="total-count">(3 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Nathan Guenther</span>
+            <span class="user-email">nathan@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Customer Service <span class="total-count">(3 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Nathan Guenther</span>
+            <span class="user-email">nathan@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Service Management <span class="total-count">(3 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Nathan Guenther</span>
+            <span class="user-email">nathan@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Software <span class="total-count">(3 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Nathan Guenther</span>
+            <span class="user-email">nathan@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      atl-vertigo--shard-jira-prod-test-us-2--brands.atlassian.net <span class="total-count">(6 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Confluence <span class="total-count">(3 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Nathan Guenther</span>
+            <span class="user-email">nathan@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Software <span class="total-count">(3 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Nathan Guenther</span>
+            <span class="user-email">nathan@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      atl-vertigo--shard-jira-prod-test-us-2--phong.atlassian.net <span class="total-count">(3 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Jira Software <span class="total-count">(3 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Nathan Guenther</span>
+            <span class="user-email">nathan@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      atlassianpartners.atlassian.net <span class="total-count">(12 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Confluence <span class="total-count">(4 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Kirsty Davies</span>
+            <span class="user-email">kirsty@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-10-15</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Nathan Guenther</span>
+            <span class="user-email">nathan@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2022-05-06</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">licensing@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-08-26</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">sales</span>
+            <span class="user-email">sales@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Software <span class="total-count">(8 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Kirsty Davies</span>
+            <span class="user-email">kirsty@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Nathan Guenther</span>
+            <span class="user-email">nathan@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">licensing@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Patrecia Javellana</span>
+            <span class="user-email">patrecia@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-07-30</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">sales</span>
+            <span class="user-email">sales@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Atlassian Partner</span>
+            <span class="user-email">atlassian-partner@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      aucyber.atlassian.net <span class="total-count">(2 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Confluence <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-09-09</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Software <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-09-09</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      aucyberqhrc-sandbox.atlassian.net <span class="total-count">(1 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Jira Service Management <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-04-17</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      aucyberqhrc.atlassian.net <span class="total-count">(1 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Jira Service Management <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-09-14</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      aucybervgsd.atlassian.net <span class="total-count">(1 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Jira Service Management <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-09-08</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      bitbucket.org <span class="total-count">(8 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Bitbucket <span class="total-count">(8 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Kirsty Davies</span>
+            <span class="user-email">kirsty@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-06-03</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Nathan Guenther</span>
+            <span class="user-email">nathan@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-02-24</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Bao Duy Nguyen</span>
+            <span class="user-email">baoduy@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-03-18</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Kiet Ngo</span>
+            <span class="user-email">kiet@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2024-03-04</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">licensing@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-10-07</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Phong Nguyen</span>
+            <span class="user-email">phong@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-02-14</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Patrecia Javellana</span>
+            <span class="user-email">patrecia@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-08-18</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Phil Nguyen</span>
+            <span class="user-email">phung@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2024-08-14</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      callaghaninnovation.atlassian.net <span class="total-count">(3 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Atlas <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Confluence <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2024-11-12</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Service Management <span class="total-count">(0 inactive)</span>
+        </div>
+        <div class="no-users">✓ All users are active (within 30 days)</div>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Software <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2023-10-03</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      communardopartners.atlassian.net <span class="total-count">(1 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Confluence <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2024-11-12</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      compass-ops-help.atlassian.net <span class="total-count">(1 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Confluence <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-02-18</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      craigsip.atlassian.net <span class="total-count">(4 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Atlas <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Confluence <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Software <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Opsgenie <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      cxnagency.atlassian.net <span class="total-count">(3 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Confluence <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-09-08</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Service Management <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-09-08</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Software <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-09-08</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      ecomi.atlassian.net <span class="total-count">(1 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Jira Software <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Automation Account</span>
+            <span class="user-email">automation@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      ecosystem.atlassian.net <span class="total-count">(8 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Confluence <span class="total-count">(2 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Kirsty Davies</span>
+            <span class="user-email">kirsty@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2021-03-15</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Patrecia Javellana</span>
+            <span class="user-email">patrecia@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Product Discovery <span class="total-count">(2 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Kirsty Davies</span>
+            <span class="user-email">kirsty@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Patrecia Javellana</span>
+            <span class="user-email">patrecia@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Service Management <span class="total-count">(2 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Kirsty Davies</span>
+            <span class="user-email">kirsty@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Patrecia Javellana</span>
+            <span class="user-email">patrecia@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Software <span class="total-count">(2 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Kirsty Davies</span>
+            <span class="user-email">kirsty@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Patrecia Javellana</span>
+            <span class="user-email">patrecia@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      education-nz.atlassian.net <span class="total-count">(3 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Confluence <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-10-21</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Product Discovery <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-05-05</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Service Management <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-11-03</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      egdemo.atlassian.net <span class="total-count">(2 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Atlas <span class="total-count">(2 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Kirsty Davies</span>
+            <span class="user-email">kirsty@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      egdemo1.atlassian.net <span class="total-count">(2 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Atlas <span class="total-count">(2 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Kirsty Davies</span>
+            <span class="user-email">kirsty@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      egdemo2.atlassian.net <span class="total-count">(9 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Atlas <span class="total-count">(2 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Kirsty Davies</span>
+            <span class="user-email">kirsty@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Confluence <span class="total-count">(2 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Kirsty Davies</span>
+            <span class="user-email">kirsty@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2023-09-25</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2024-08-23</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Product Discovery <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Kirsty Davies</span>
+            <span class="user-email">kirsty@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2023-11-05</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Service Management <span class="total-count">(2 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Kirsty Davies</span>
+            <span class="user-email">kirsty@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2023-11-07</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-08-14</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Software <span class="total-count">(2 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Kirsty Davies</span>
+            <span class="user-email">kirsty@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2023-11-07</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-08-14</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      egdemo3.atlassian.net <span class="total-count">(3 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Atlas <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Kirsty Davies</span>
+            <span class="user-email">kirsty@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Product Discovery <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Kirsty Davies</span>
+            <span class="user-email">kirsty@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2024-02-05</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Software <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Kirsty Davies</span>
+            <span class="user-email">kirsty@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2024-02-04</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      egdemo4.atlassian.net <span class="total-count">(3 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Atlas <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Software <span class="total-count">(2 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Kirsty Davies</span>
+            <span class="user-email">kirsty@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2024-03-12</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2024-03-11</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      elegancegroup-9051298.atlassian.net <span class="total-count">(1 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Loom <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Kirsty Davies</span>
+            <span class="user-email">kirsty@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      elegancegroup-demo.atlassian.net <span class="total-count">(24 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Compass <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-07-05</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Confluence <span class="total-count">(5 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-03-06</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Kirsty Davies</span>
+            <span class="user-email">kirsty@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2024-08-05</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Nathan Guenther</span>
+            <span class="user-email">nathan@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2021-05-11</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Automation Account</span>
+            <span class="user-email">automation@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Patrecia Javellana</span>
+            <span class="user-email">patrecia@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2022-08-15</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Product Discovery <span class="total-count">(3 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-11-02</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Nathan Guenther</span>
+            <span class="user-email">nathan@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Service Management <span class="total-count">(4 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-07-22</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Kirsty Davies</span>
+            <span class="user-email">kirsty@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2023-10-20</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Nathan Guenther</span>
+            <span class="user-email">nathan@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-02-13</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Patrecia Javellana</span>
+            <span class="user-email">patrecia@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2024-11-03</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Software <span class="total-count">(5 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-07-22</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Kirsty Davies</span>
+            <span class="user-email">kirsty@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2023-10-20</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Nathan Guenther</span>
+            <span class="user-email">nathan@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-02-13</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Automation Account</span>
+            <span class="user-email">automation@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2022-11-14</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Patrecia Javellana</span>
+            <span class="user-email">patrecia@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2024-11-03</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Statuspage <span class="total-count">(6 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-08-21</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Kirsty Davies</span>
+            <span class="user-email">kirsty@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2022-11-30</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2022-12-05</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Nathan Guenther</span>
+            <span class="user-email">nathan@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Automation Account</span>
+            <span class="user-email">automation@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Patrecia Javellana</span>
+            <span class="user-email">patrecia@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-01-02</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      elegancegroup-demo2.atlassian.net <span class="total-count">(16 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Jira Service Management <span class="total-count">(5 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2024-07-03</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Kirsty Davies</span>
+            <span class="user-email">kirsty@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2023-06-28</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-10-09</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Nathan Guenther</span>
+            <span class="user-email">nathan@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2022-04-24</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Automation Account</span>
+            <span class="user-email">automation@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2022-03-29</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Software <span class="total-count">(7 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2024-07-03</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Kirsty Davies</span>
+            <span class="user-email">kirsty@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2023-07-04</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-10-09</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Nathan Guenther</span>
+            <span class="user-email">nathan@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2022-04-24</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Automation Account</span>
+            <span class="user-email">automation@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2022-03-29</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Patrecia Javellana</span>
+            <span class="user-email">patrecia@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">baoduy+service</span>
+            <span class="user-email">baoduy+service@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Opsgenie <span class="total-count">(4 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2024-05-28</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-06-27</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Nathan Guenther</span>
+            <span class="user-email">nathan@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Automation Account</span>
+            <span class="user-email">automation@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      elegancegroup-demo3.atlassian.net <span class="total-count">(13 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Jira Service Management <span class="total-count">(5 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2023-03-13</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Kirsty Davies</span>
+            <span class="user-email">kirsty@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2023-06-28</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Nathan Guenther</span>
+            <span class="user-email">nathan@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2022-04-24</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Automation Account</span>
+            <span class="user-email">automation@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Patrecia Javellana</span>
+            <span class="user-email">patrecia@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2022-06-02</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Software <span class="total-count">(5 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2023-03-13</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Kirsty Davies</span>
+            <span class="user-email">kirsty@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2023-06-28</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Nathan Guenther</span>
+            <span class="user-email">nathan@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2022-04-24</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Automation Account</span>
+            <span class="user-email">automation@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Patrecia Javellana</span>
+            <span class="user-email">patrecia@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2022-06-02</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Opsgenie <span class="total-count">(3 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Nathan Guenther</span>
+            <span class="user-email">nathan@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      elegancegroup-demo4.atlassian.net <span class="total-count">(6 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Jira Software <span class="total-count">(6 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2023-03-27</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Kirsty Davies</span>
+            <span class="user-email">kirsty@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2023-07-04</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-10-14</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Nathan Guenther</span>
+            <span class="user-email">nathan@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Automation Account</span>
+            <span class="user-email">automation@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Patrecia Javellana</span>
+            <span class="user-email">patrecia@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2024-11-19</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      elegancegroup-demo5.atlassian.net <span class="total-count">(6 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Jira Customer Service <span class="total-count">(2 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Nathan Guenther</span>
+            <span class="user-email">nathan@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Service Management <span class="total-count">(2 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Nathan Guenther</span>
+            <span class="user-email">nathan@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Software <span class="total-count">(2 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Nathan Guenther</span>
+            <span class="user-email">nathan@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      elegancegroup-sandbox-744.atlassian.net <span class="total-count">(5 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Atlas <span class="total-count">(5 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Kirsty Davies</span>
+            <span class="user-email">kirsty@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Nathan Guenther</span>
+            <span class="user-email">nathan@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Automation Account</span>
+            <span class="user-email">automation@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      elegancegroup.atlassian.net <span class="total-count">(15 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Atlas <span class="total-count">(6 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Kirsty Davies</span>
+            <span class="user-email">kirsty@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Nathan Guenther</span>
+            <span class="user-email">nathan@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Automation Account</span>
+            <span class="user-email">automation@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Patrecia Javellana</span>
+            <span class="user-email">patrecia@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Confluence <span class="total-count">(2 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Nathan Guenther</span>
+            <span class="user-email">nathan@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-10-24</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Automation Account</span>
+            <span class="user-email">automation@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2024-11-18</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Product Discovery <span class="total-count">(3 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2024-05-14</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Nathan Guenther</span>
+            <span class="user-email">nathan@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Automation Account</span>
+            <span class="user-email">automation@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Service Management <span class="total-count">(2 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Automation Account</span>
+            <span class="user-email">automation@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-04-09</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">licensing@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-09-23</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Software <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Automation Account</span>
+            <span class="user-email">automation@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-04-09</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Loom <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Automation Account</span>
+            <span class="user-email">automation@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      globetelecom.atlassian.net <span class="total-count">(2 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Confluence <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2024-11-12</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Software <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2024-07-22</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      harrison-ai-sandbox.atlassian.net <span class="total-count">(2 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Confluence <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Software <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      harrison-ai.atlassian.net <span class="total-count">(4 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Atlas <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Confluence <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-08-25</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Service Management <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Software <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Loom <span class="total-count">(0 inactive)</span>
+        </div>
+        <div class="no-users">✓ All users are active (within 30 days)</div>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      heliosps.atlassian.net <span class="total-count">(3 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Confluence <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Service Management <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-09-05</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Software <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-09-05</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      hubdoc.atlassian.net <span class="total-count">(1 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Jira Software <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      intowork-sandbox-325.atlassian.net <span class="total-count">(1 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Jira Service Management <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      intowork.atlassian.net <span class="total-count">(3 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Confluence <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-09-16</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Service Management <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-09-16</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Software <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-09-16</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      kordia.atlassian.net <span class="total-count">(2 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Confluence <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2024-11-12</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Software <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2024-11-12</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      kordiagroupltd1611692524.atlassian.net <span class="total-count">(1 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Statuspage <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-08-21</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      krdelivery-jsm-sandbox.atlassian.net <span class="total-count">(3 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Jira Service Management <span class="total-count">(3 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-11-04</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Automation Account</span>
+            <span class="user-email">automation@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      krdelivery-sandbox-600.atlassian.net <span class="total-count">(8 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Jira Service Management <span class="total-count">(4 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-04-03</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Kirsty Davies</span>
+            <span class="user-email">kirsty@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2023-03-22</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2024-09-09</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Automation Account</span>
+            <span class="user-email">automation@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Software <span class="total-count">(4 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-04-03</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Kirsty Davies</span>
+            <span class="user-email">kirsty@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2023-03-22</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2024-08-22</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Automation Account</span>
+            <span class="user-email">automation@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      krdelivery.atlassian.net <span class="total-count">(3 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Confluence <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-04-22</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Service Management <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Automation Account</span>
+            <span class="user-email">automation@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2024-11-29</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Software <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Automation Account</span>
+            <span class="user-email">automation@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2024-11-29</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      krworkshops-sandbox-742.atlassian.net <span class="total-count">(2 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Jira Service Management <span class="total-count">(2 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Automation Account</span>
+            <span class="user-email">automation@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      krworkshops.atlassian.net <span class="total-count">(3 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Jira Service Management <span class="total-count">(3 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-05-16</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-09-23</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Automation Account</span>
+            <span class="user-email">automation@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      mindhive-global-productsandbox.atlassian.net <span class="total-count">(1 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Jira Software <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      mindhive-global.atlassian.net <span class="total-count">(3 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Confluence <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-06-19</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Service Management <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-08-17</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Software <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-08-17</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      mindhive-projects.atlassian.net <span class="total-count">(1 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Confluence <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-08-17</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      moe-salesforce-platform.atlassian.net <span class="total-count">(1 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Confluence <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2023-12-21</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      one-atlas-hvfk.atlassian.net <span class="total-count">(6 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Compass <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Confluence <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-08-19</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Service Management <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-08-19</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Software <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-08-19</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Loom <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-08-25</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Mercury <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      one-atlas-impt.atlassian.net <span class="total-count">(14 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Compass <span class="total-count">(2 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Confluence <span class="total-count">(2 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Product Discovery <span class="total-count">(2 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-10-02</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Service Management <span class="total-count">(2 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-10-02</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Software <span class="total-count">(2 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-10-02</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Loom <span class="total-count">(2 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-10-02</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Mercury <span class="total-count">(2 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      one-atlas-jpea.atlassian.net <span class="total-count">(4 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Compass <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Confluence <span class="total-count">(0 inactive)</span>
+        </div>
+        <div class="no-users">✓ All users are active (within 30 days)</div>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Guard Detect <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Customer Service <span class="total-count">(0 inactive)</span>
+        </div>
+        <div class="no-users">✓ All users are active (within 30 days)</div>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Product Discovery <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Service Management <span class="total-count">(0 inactive)</span>
+        </div>
+        <div class="no-users">✓ All users are active (within 30 days)</div>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Software <span class="total-count">(0 inactive)</span>
+        </div>
+        <div class="no-users">✓ All users are active (within 30 days)</div>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Loom <span class="total-count">(0 inactive)</span>
+        </div>
+        <div class="no-users">✓ All users are active (within 30 days)</div>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Mercury <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      pcg-cyber.atlassian.net <span class="total-count">(1 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Jira Software <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-09-09</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      pepperstone.atlassian.net <span class="total-count">(1 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Statuspage <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-06-22</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      picklesauctions-sandbox-435.atlassian.net <span class="total-count">(1 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Jira Software <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-05-25</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      picklesauctions.atlassian.net <span class="total-count">(2 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Confluence <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-07-02</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Software <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-05-14</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      planday.atlassian.net <span class="total-count">(4 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Confluence <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Service Management <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Software <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Statuspage <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      productionraceseries.atlassian.net <span class="total-count">(3 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Confluence <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2023-11-14</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Service Management <span class="total-count">(2 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-05-23</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Automation Account</span>
+            <span class="user-email">automation@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      railfreight.atlassian.net <span class="total-count">(2 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Atlas <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Confluence <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2024-07-30</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      securityshift.atlassian.net <span class="total-count">(2 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Confluence <span class="total-count">(2 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">licensing@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      stagil.atlassian.net <span class="total-count">(1 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Confluence <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Patrecia Javellana</span>
+            <span class="user-email">patrecia@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      systemethix-nz-sandbox-923.atlassian.net <span class="total-count">(1 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Jira Service Management <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-08-07</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      systemethix-nz.atlassian.net <span class="total-count">(1 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Jira Service Management <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-10-27</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      thewarehouse-sandbox-424.atlassian.net <span class="total-count">(2 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Jira Software <span class="total-count">(2 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2023-07-12</span>
+          </li>
+          <li class="user-item">
+            <span class="user-name">Kirsty Davies</span>
+            <span class="user-email">kirsty@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2022-05-24</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      tickstar.atlassian.net <span class="total-count">(3 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Confluence <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Product Discovery <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Software <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      trello.com <span class="total-count">(1 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Trello <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-08-26</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      vectorltd-sandbox-244.atlassian.net <span class="total-count">(1 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Jira Software <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2024-12-02</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      wearebasis-sandbox-474.atlassian.net <span class="total-count">(1 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Jira Software <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2024-03-07</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      xero-sandbox-196.atlassian.net <span class="total-count">(3 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Confluence <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-05-20</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Service Management <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-08-06</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Software <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-08-06</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      xero-sandbox-ai.atlassian.net <span class="total-count">(3 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Confluence <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Service Management <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Software <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      xero-sandbox-ai2.atlassian.net <span class="total-count">(3 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Confluence <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Service Management <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Software <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      xero-sandbox.atlassian.net <span class="total-count">(1 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Jira Software <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2024-10-02</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      xero.atlassian.net <span class="total-count">(3 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Confluence <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2025-11-02</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Guard Detect <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Rick Earl</span>
+            <span class="user-email">rick@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: Never</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Service Management <span class="total-count">(0 inactive)</span>
+        </div>
+        <div class="no-users">✓ All users are active (within 30 days)</div>
+      </div>
+      <div class="product-section">
+        <div class="product-header">
+          Jira Software <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2023-08-30</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="url-section">
+    <div class="url-header" onclick="toggleSection(this)">
+      zip1.atlassian.net <span class="total-count">(1 inactive users)</span>
+    </div>
+    <div class="url-content">
+      <div class="product-section">
+        <div class="product-header">
+          Opsgenie <span class="total-count">(1 inactive)</span>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <span class="user-name">Brett Celliers</span>
+            <span class="user-email">brett@elegancegroup.co.nz</span>
+            <span class="last-active">Last active: 2022-12-01</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function toggleSection(header) {
+    header.classList.toggle('collapsed');
+    const content = header.nextElementSibling;
+    content.classList.toggle('hidden');
+  }
+</script>
+
+              
+            
+          </body></html>
